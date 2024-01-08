@@ -6,7 +6,9 @@ import {
   publicProcedure,
 } from "~/server/api/trpc";
 
+
 export const postRouter = createTRPCRouter({
+  // protectedProcedures are only available to authorized users
   hello: publicProcedure
     .input(z.object({ text: z.string() }))
     .query(({ input }) => {

@@ -5,6 +5,7 @@ import { appRouter } from "~/server/api/root";
 import { createTRPCContext } from "~/server/api/trpc";
 
 // export API handler
+// Generic endpoint, TRPC will manage requests here
 export default createNextApiHandler({
   router: appRouter,
   createContext: createTRPCContext,
