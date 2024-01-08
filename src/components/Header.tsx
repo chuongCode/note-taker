@@ -27,6 +27,7 @@ export const Header = () => {
             <button
               className="btn-ghost rounded-btn btn"
               onClick={() => void signIn()}
+              style={{ color: "#FFD52E" }}
             >
               Sign in
             </button>
