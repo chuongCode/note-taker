@@ -6,3 +6,21 @@ As of right now, the host is idle and inactive.
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
 Following in the great steps of [Jack Herrington](https://github.com/jherr)
+
+# To run on your own local machine:
+
+Installation:
+```
+cd note-taker
+npm install
+```
+Update with your own values:
+```
+cp .env.example .env
+```
+
+Running:
+```
+npm run db:push
+npm run dev
+```
